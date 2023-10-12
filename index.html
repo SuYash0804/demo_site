@@ -23,25 +23,50 @@
             font-size: 13.5 !important;
         }
 
+        .section-2-img {
+            margin: auto;
+        }
+
+        .over-img-text {
+            margin: 25% auto auto;
+        }
+
+        .over-three-columns {
+            width: 90%;
+        }
+
         @media (min-width: 992px) {
             .hero-main {
-                font-size: 39.5px;
+                font-size: 45px;
             }
-            
+
             .hero-secondary {
                 font-size: 16px !important;
+            }
+
+            .section-2-img {
+                margin: 0px;
+            }
+
+            .over-img-text {
+                margin: 0px 0px 0px 50%;
+            }
+
+            .over-three-columns {
+                width: 50%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div style="position: fixed; z-index: 999999999; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);" id="navbar" class="d-flex justify-content-between align-items-center w-100 bg-danger-subtle">
+    <div style="position: fixed; z-index: 999999999; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);" id="navbar"
+        class="d-flex justify-content-between align-items-center w-100 bg-danger-subtle">
         <div class="d-flex align-items-center gap-5">
             <img src="./logo.png" width="120px" alt="logo">
             <ul class="gap-4 fw-bolder d-none d-lg-flex m-0 p-0" style="list-style: none;">
                 <li><a class="text-decoration-none text-black" href="#">Home</a></li>
-                <li><a class="text-decoration-none text-black" href="#">About</a></li>
+                <li><a class="text-decoration-none text-black" href="./about/index.html">About</a></li>
                 <li><a class="text-decoration-none text-black" href="#">For Tenants</a></li>
                 <li><a class="text-decoration-none text-black" href="#">For Landlords</a></li>
                 <li><a class="text-decoration-none text-black" href="#">Contact</a></li>
@@ -62,64 +87,104 @@
                     <h1 class="text-white hero-main fw-bolder">
                         Unlocking the Door to Seamless Property Management Where Your Investment Meets Excellence
                     </h1>
-                    <p class="text-white hero-secondary">Elevating co-house shares for professionals, with 200 plus properties nationwide under our expert management.</p>
+                    <p class="text-white hero-secondary">Elevating co-house shares for professionals, with 200 plus
+                        properties nationwide under our expert management.</p>
+                    <button class="btn btn-outline-light">Learn More</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-4 p-0">
-                <img width="100%" src="https://images.pexels.com/photos/5825575/pexels-photo-5825575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <div class="position-relative my-5">
+        <img class="section-2-img" style="width: 55%; aspect-ratio: 16/9; display: block;"
+            src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100"
+            style="inset: 0px 0px -25%">
+            <div class="p-5 bg-danger-subtle over-img-text" style="width: 35%;">
+                <h1 class="text-black hero-main fw-bolder mb-4">
+                    Let's find the perfect home for you
+                </h1>
+                <div class="px-4 py-3 btn btn-danger rounded-0">Learn More</div>
             </div>
-            <div class="bg-danger-subtle col-12 col-lg-8 p-5">
-                <h2>About us</h2>
-                <p class="hero-secondary">At Multi-let UK, we’re not just in the business of property management; we’re in the business of creating exceptional living experiences. We understand that your home isn’t just a place; it’s the backdrop to your life’s journey, a sanctuary, and a place where lifelong memories are made.<br/>
-                    With a commitment to redefining shared housing, Multi-let UK has established itself as a trusted leader in the industry.   Our mission is simple yet profound: to provide you with a home that perfectly suits your lifestyle and aspirations, while fostering a sense of community that transforms housemates into friends
-                    </p>
-                <button class="btn bg-warning-subtle">Learn More</button>
-            </div>
-        </div>
-        <div class="row justify-content-center match-height py-5">
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/8504300/pexels-photo-8504300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="aspect-ratio: 16/9;" alt="">
-                    <div class="card-body bg-danger-subtle">
-                        <h3>Tailored Homes</h3>
-                        <p>We believe that your home should reflect your unique needs and desires. Before finding you the perfect property, we take the time to understand your lifestyle, preferences, and goals.</p>
-                    </div>
+            <div class="d-flex align-items-start bg-danger p-3 gap-3 mx-auto over-three-columns">
+                <div style="width: calc(100%/3);" class="d-flex flex-column justify-content-center align-items-center">
+                    <span style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-white text-danger mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span class="text-white fw-bolder text-center">Great Locations</span>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/8386138/pexels-photo-8386138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="aspect-ratio: 16/9;" alt="">
-                    <div class="card-body bg-danger-subtle">
-                        <h3>Exceptional Service</h3>
-                        <p>Our dedicated team is passionate about providing top-notch service at every step of your journey with us. From property search to move-in day and beyond, we’re here for you. Our commitment to quality extends to the properties we manage. We ensure that every home is maintained to the highest standards, offering you comfort and peace of mind.</p>
-                    </div>
+                <div style="width: calc(100%/3);" class="d-flex flex-column justify-content-center align-items-center">
+                    <span style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-white text-danger mb-3">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </span>
+                    <span class="text-white fw-bolder text-center">Bills Included with Rent </span>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" style="aspect-ratio: 16/9;" alt="">
-                    <div class="card-body bg-danger-subtle">
-                        <h3>Community Spirit</h3>
-                        <p>We recognize that a house is just a structure, but a home is a place where bonds are forged. We foster a sense of community among housemates, helping you create connections that last a lifetime</p>
-                    </div>
+                <div style="width: calc(100%/3);" class="d-flex flex-column justify-content-center align-items-center">
+                    <span style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-white text-danger mb-3">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </span>
+                    <span class="text-white fw-bolder text-center">Professional and Sociable Housemates</span>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="bg-danger-subtle col-12 col-lg-8 p-5 order-lg-1 order-2">
-                <h2>For Landlord : Your Peace of Mind, Our Priority.</h2>
-                <p class="hero-secondary">Calling all homeowners with spacious four or five-bedroom houses – Multi-Let UK has a unique proposition for you. We’re in search of smart, long-term rental opportunities, and if you fit the bill, you could be our next valued partner.<br/>
-
-                    At Multi-Let UK, we take pride in our discerning selection process, handpicking the very best properties and responsible landlords for our esteemed portfolio. When you join our network, you’ll enjoy benefits such as a higher net monthly rental income, full property management services, and the added perk of no furnishing costs. Plus, by collaborating with us, you’re not just leasing a property; you’re helping shape the living experiences of the next generation of accomplished professionals in the heart of London. If you believe your house has what it takes to become part of the Multi-Let UK success story, don’t hesitate to get in touch and explore the exciting possibilities that await
-                    
-                    </p>
+    </div>
+    <div class="container my-5 py-5">
+        <div class="row align-items-center py-5">
+            <div class="col-12 col-lg-6">
+                <h2 class="text-danger" style="font-size: 50px;"><i>Our Services</i></h2>
             </div>
-            <div class="col-12 col-lg-4 p-0 order-lg-2 order-1">
-                <img width="100%" src="https://images.pexels.com/photos/5825575/pexels-photo-5825575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <div class="col-12 col-lg-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="fw-bolder text-danger">Zero Deposit Scheme</h4>
+                            <p>Say goodbye to heffy deposits with our Zero Deposit Scheme, giving tenants peace of mind
+                                and financial flexibility</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="fw-bolder text-danger">No Utilities</h4>
+                            <p>Enjoy hass;e-free living with our all-inclusive rental, where utilities are icluded in
+                                the price</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="fw-bolder text-danger">Express Move-In</h4>
+                            <p>View today, move in within 48 hours, making your new home a reality</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="fw-bolder text-danger">Swift Care</h4>
+                            <p>We're just one call away, ensuring all your maintenance needs are resolved promptly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-danger-subtle p-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p style="font-size: 30px;">380 Nottingham Rd, Nottingham NG7 7FE, United Kingdom</p>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <span>hello@mygroovydomain.com</span>
             </div>
         </div>
     </div>
@@ -135,7 +200,7 @@
     <script>
         const navbar = document.getElementById("navbar")
         window.addEventListener("scroll", function (event) {
-            console.log({event})
+            console.log({ event })
         })
     </script>
 </body>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+
+    <style>
+        .hero-main {
+            font-size: 25px;
+        }
+
+        .hero-secondary {
+            font-size: 13.5 !important;
+        }
+
+        @media (min-width: 992px) {
+            .hero-main {
+                font-size: 39.5px;
+            }
+            
+            .hero-secondary {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: fixed; z-index: 999999999; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);" id="navbar" class="d-flex justify-content-between align-items-center w-100 bg-danger-subtle">
+        <div class="d-flex align-items-center gap-5">
+            <img src="./logo.png" width="120px" alt="logo">
+            <ul class="gap-4 fw-bolder d-none d-lg-flex m-0 p-0" style="list-style: none;">
+                <li><a class="text-decoration-none text-black" href="#">Home</a></li>
+                <li><a class="text-decoration-none text-black" href="./about/index.html">About</a></li>
+                <li><a class="text-decoration-none text-black" href="#">For Tenants</a></li>
+                <li><a class="text-decoration-none text-black" href="#">For Landlords</a></li>
+                <li><a class="text-decoration-none text-black" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <a class=" d-none d-lg-flex align-items-center gap-3 px-5 text-decoration-none text-black" href="#">
+            <span style="aspect-ratio: 1;"
+                class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-black text-white"><i
+                    class="fa-regular fa-calendar-days"></i></span>
+            <span class="fw-bold">Book a viewing now</span>
+        </a>
+    </div>
+    <div class="d-flex flex-column justify-content-center p-5"
+        style="height: 100vh; background-image: url('https://images.pexels.com/photos/5721322/pexels-photo-5721322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;background-attachment: fixed;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h1 class="text-white hero-main fw-bolder">
+                        Unlocking the Door to Seamless Property Management Where Your Investment Meets Excellence
+                    </h1>
+                    <p class="text-white hero-secondary">Elevating co-house shares for professionals, with 200 plus properties nationwide under our expert management.</p>
+                    <button class="btn btn-outline-light">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 p-0">
+                <img width="100%" src="https://images.pexels.com/photos/5825575/pexels-photo-5825575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="bg-danger-subtle col-12 col-lg-8 p-5">
+                <h2>About us</h2>
+                <p class="hero-secondary">At Multi-let UK, we’re not just in the business of property management; we’re in the business of creating exceptional living experiences. We understand that your home isn’t just a place; it’s the backdrop to your life’s journey, a sanctuary, and a place where lifelong memories are made.<br/>
+                    With a commitment to redefining shared housing, Multi-let UK has established itself as a trusted leader in the industry.   Our mission is simple yet profound: to provide you with a home that perfectly suits your lifestyle and aspirations, while fostering a sense of community that transforms housemates into friends
+                    </p>
+                <button class="btn bg-warning-subtle">Learn More</button>
+            </div>
+        </div>
+        <div class="row justify-content-center match-height py-5">
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
+                    <img src="https://images.pexels.com/photos/8504300/pexels-photo-8504300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="aspect-ratio: 16/9;" alt="">
+                    <div class="card-body bg-danger-subtle">
+                        <h3>Tailored Homes</h3>
+                        <p>We believe that your home should reflect your unique needs and desires. Before finding you the perfect property, we take the time to understand your lifestyle, preferences, and goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
+                    <img src="https://images.pexels.com/photos/8386138/pexels-photo-8386138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="aspect-ratio: 16/9;" alt="">
+                    <div class="card-body bg-danger-subtle">
+                        <h3>Exceptional Service</h3>
+                        <p>Our dedicated team is passionate about providing top-notch service at every step of your journey with us. From property search to move-in day and beyond, we’re here for you. Our commitment to quality extends to the properties we manage. We ensure that every home is maintained to the highest standards, offering you comfort and peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <div class="card h-100">
+                    <img src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" style="aspect-ratio: 16/9;" alt="">
+                    <div class="card-body bg-danger-subtle">
+                        <h3>Community Spirit</h3>
+                        <p>We recognize that a house is just a structure, but a home is a place where bonds are forged. We foster a sense of community among housemates, helping you create connections that last a lifetime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="bg-danger-subtle col-12 col-lg-8 p-5 order-lg-1 order-2">
+                <h2>For Landlord : Your Peace of Mind, Our Priority.</h2>
+                <p class="hero-secondary">Calling all homeowners with spacious four or five-bedroom houses – Multi-Let UK has a unique proposition for you. We’re in search of smart, long-term rental opportunities, and if you fit the bill, you could be our next valued partner.<br/>
+
+                    At Multi-Let UK, we take pride in our discerning selection process, handpicking the very best properties and responsible landlords for our esteemed portfolio. When you join our network, you’ll enjoy benefits such as a higher net monthly rental income, full property management services, and the added perk of no furnishing costs. Plus, by collaborating with us, you’re not just leasing a property; you’re helping shape the living experiences of the next generation of accomplished professionals in the heart of London. If you believe your house has what it takes to become part of the Multi-Let UK success story, don’t hesitate to get in touch and explore the exciting possibilities that await
+                    
+                    </p>
+            </div>
+            <div class="col-12 col-lg-4 p-0 order-lg-2 order-1">
+                <img width="100%" src="https://images.pexels.com/photos/5825575/pexels-photo-5825575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById("navbar")
+        window.addEventListener("scroll", function (event) {
+            console.log({event})
+        })
+    </script>
+</body>
+
+</html>
