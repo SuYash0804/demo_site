@@ -28,11 +28,16 @@
         }
 
         .over-img-text {
-            margin: 25% auto auto;
+            margin: auto;
+            width: 90%;
         }
 
         .over-three-columns {
             width: 90%;
+        }
+
+        .over-image-section {
+            position: relative;
         }
 
         @media (min-width: 992px) {
@@ -50,10 +55,15 @@
 
             .over-img-text {
                 margin: 0px 0px 0px 50%;
+                width: 35%;
             }
 
             .over-three-columns {
                 width: 50%;
+            }
+
+            .over-image-section {
+                position: absolute;
             }
         }
     </style>
@@ -65,11 +75,11 @@
         <div class="d-flex align-items-center gap-5">
             <img src="./logo.png" width="120px" alt="logo">
             <ul class="gap-4 fw-bolder d-none d-lg-flex m-0 p-0" style="list-style: none;">
-                <li><a class="text-decoration-none text-black" href="#">Home</a></li>
-                <li><a class="text-decoration-none text-black" href="./about/index.html">About</a></li>
-                <li><a class="text-decoration-none text-black" href="#">For Tenants</a></li>
-                <li><a class="text-decoration-none text-black" href="#">For Landlords</a></li>
-                <li><a class="text-decoration-none text-black" href="#">Contact</a></li>
+                <li><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
+                <li><a class="text-decoration-none text-black" href="./about.html">About</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a></li>
+                <li><a class="text-decoration-none text-black" href="./contact.html">Contact</a></li>
             </ul>
         </div>
         <a class=" d-none d-lg-flex align-items-center gap-3 px-5 text-decoration-none text-black" href="#">
@@ -98,9 +108,9 @@
         <img class="section-2-img" style="width: 55%; aspect-ratio: 16/9; display: block;"
             src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="">
-        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100"
+        <div class="over-image-section d-flex flex-column align-items-center justify-content-center w-100"
             style="inset: 0px 0px -25%">
-            <div class="p-5 bg-danger-subtle over-img-text" style="width: 35%;">
+            <div class="p-5 bg-danger-subtle over-img-text">
                 <h1 class="text-black hero-main fw-bolder mb-4">
                     Let's find the perfect home for you
                 </h1>

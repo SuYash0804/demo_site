@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+
+    <style>
+        .hero-main {
+            font-size: 25px;
+        }
+
+        .hero-secondary {
+            font-size: 13.5 !important;
+        }
+
+        .about-img {
+            margin: 0px auto;
+        }
+
+        @media (min-width: 992px) {
+            .hero-main {
+                font-size: 45px;
+            }
+
+            .hero-secondary {
+                font-size: 20px !important;
+            }
+
+            .about-img {
+                margin: 0px 0px 0px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: fixed; z-index: 999999999; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);" id="navbar"
+        class="d-flex justify-content-between align-items-center w-100 bg-danger-subtle">
+        <div class="d-flex align-items-center gap-5">
+            <img src="../logo.png" width="120px" alt="logo">
+            <ul class="gap-4 fw-bolder d-none d-lg-flex m-0 p-0" style="list-style: none;">
+                <li><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
+                <li><a class="text-decoration-none text-black" href="./about.html">About</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a></li>
+                <li><a class="text-decoration-none text-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <a class=" d-none d-lg-flex align-items-center gap-3 px-5 text-decoration-none text-black" href="#">
+            <span style="aspect-ratio: 1;"
+                class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-black text-white"><i
+                    class="fa-regular fa-calendar-days"></i></span>
+            <span class="fw-bold">Book a viewing now</span>
+        </a>
+    </div>
+    <div style="position: relative; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);" id="navbar"
+        class="d-flex justify-content-between align-items-center w-100 bg-danger-subtle">
+        <div class="d-flex align-items-center gap-5">
+            <img src="../logo.png" width="120px" alt="logo">
+            <ul class="gap-4 fw-bolder d-none d-lg-flex m-0 p-0" style="list-style: none;">
+                <li><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
+                <li><a class="text-decoration-none text-black" href="./about.html">About</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a></li>
+                <li><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a></li>
+                <li><a class="text-decoration-none text-black" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <a class=" d-none d-lg-flex align-items-center gap-3 px-5 text-decoration-none text-black" href="#">
+            <span style="aspect-ratio: 1;"
+                class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-black text-white"><i
+                    class="fa-regular fa-calendar-days"></i></span>
+            <span class="fw-bold">Book a viewing now</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 mb-5">
+
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-danger text-white">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    380 Nottingham Rd, Nottingham NG7 7FE, United Kingdom
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-danger text-white">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    info@multi-let.co.uk
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-danger text-white">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    +44 330 660 0589
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-danger text-white">
+                        <i class="fa-regular fa-clock"></i>
+                    </a>
+                    Timings
+                </div>
+
+                <ul class="ps-5" style="list-style: none;">
+                    <li class="mb-2">Monday 9:00 am – 5:00 pm</li>
+                    <li class="mb-2">Tuesday 9:00 am – 5:00 pm</li>
+                    <li class="mb-2">Wednesday 9:00 am – 5:00 pm</li>
+                    <li class="mb-2">Thursday 9:00 am – 5:00 pm</li>
+                    <li class="mb-2">Friday 9:00 am – 5:00 pm</li>
+                    <li class="mb-2">Saturday Closed</li>
+                    <li class="mb-2">Sunday Closed</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 p-lg-5 order-1 order-lg-2 mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="fw-bold text-danger hero-main">Contact Form</h2>
+                        <form action="" id="contact-form">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="mb-3 col-12 col-lg-6"><input name="name" type="text" placeholder="Name"
+                                            class="form-control"></div>
+                                    <div class="mb-3 col-12 col-lg-6"><input name="email" type="text"
+                                            placeholder="Email Address" class="form-control"></div>
+                                    <div class="mb-3 col-12">
+                                        <textarea name="message" class="form-control" placeholder="Message" id=""
+                                            cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-danger-subtle p-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p style="font-size: 30px;">380 Nottingham Rd, Nottingham NG7 7FE, United Kingdom</p>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a style="aspect-ratio: 1;"
+                        class="d-flex justify-content-center align-items-center p-3 rounded-pill bg-danger text-white">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <span>hello@mygroovydomain.com</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById("navbar")
+        window.addEventListener("scroll", function (event) {
+            console.log({ event })
+        })
+    </script>
+</body>
+
+</html>
