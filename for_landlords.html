@@ -27,6 +27,15 @@
             margin: 0px auto;
         }
 
+        #sidebarContent {
+            transform: translateX(100%);
+            transition: 0.25s ease;
+        }
+
+        #sidebarContent.show {
+            transform: translateX(0%);
+        }
+
         @media (min-width: 992px) {
             .hero-main {
                 font-size: 45px;
@@ -63,7 +72,8 @@
             <span class="fw-bold">Book a viewing now</span>
         </a>
         <div class="d-block d-lg-none p-3">
-            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="17.5px" height="17.5px">
+            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50" width="17.5px" height="17.5px">
                 <path
                     d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
             </svg>
@@ -119,7 +129,11 @@
                     <div class="card-body">
                         <h4 class="fw-bold">Guaranteed to be kept to a high standard</h4>
                         <p>
-                            Our homes are more than just properties to us; they’re a reflection of our commitment to excellence. We go the extra mile to ensure that every photo of our rooms truly captures the essence of our houses. With a dedicated team of caretakers and cutting-edge technology, we maintain our homes to the high standards they deserve, efficiently managing everything from job reports to completion.
+                            Our homes are more than just properties to us; they’re a reflection of our commitment to
+                            excellence. We go the extra mile to ensure that every photo of our rooms truly captures the
+                            essence of our houses. With a dedicated team of caretakers and cutting-edge technology, we
+                            maintain our homes to the high standards they deserve, efficiently managing everything from
+                            job reports to completion.
                         </p>
                     </div>
                 </div>
@@ -128,7 +142,10 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="fw-bold">Rent Guarantee Model</h4>
-                        <p>As your tenant, we’ve got you covered, ensuring you receive your full rental amount even during void periods. If you have an existing HMO and want to boost your income while freeing yourself from daily management hassles, reach out and inquire about our performance management service today.</p>
+                        <p>As your tenant, we’ve got you covered, ensuring you receive your full rental amount even
+                            during void periods. If you have an existing HMO and want to boost your income while freeing
+                            yourself from daily management hassles, reach out and inquire about our performance
+                            management service today.</p>
                     </div>
                 </div>
             </div>
@@ -136,7 +153,10 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="fw-bold">Full service property management</h4>
-                        <p>We have a very strong experienced Member Services Team who will act as the liaison between you and the members in the house during the contract. We can also manage your property for you, giving you more time to enjoy what you what to do. 88% of our landlords use either our all-inclusive or our pay as you go property management service</p>
+                        <p>We have a very strong experienced Member Services Team who will act as the liaison between
+                            you and the members in the house during the contract. We can also manage your property for
+                            you, giving you more time to enjoy what you what to do. 88% of our landlords use either our
+                            all-inclusive or our pay as you go property management service</p>
                     </div>
                 </div>
             </div>
@@ -168,15 +188,23 @@
                 <span>hello@mygroovydomain.com</span>
             </div>
         </div>
-        <div id="sidebarContent" class="bg-white show" style="position: fixed; width: 300px; z-index: 100; inset: 0px 0px 0px auto;">
+        <div id="sidebarContent" class="bg-white d-block d-lg-none"
+            style="position: fixed; width: 300px; z-index: 100; inset: 0px 0px 0px auto;">
             <div class="d-flex justify-content-end p-3">
-                <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" width="20px"
+                    height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
             </div>
             <ul class="gap-4 fw-bolder m-0 p-3" style="list-style: none;">
                 <li class="mb-2"><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
                 <li class="mb-2"><a class="text-decoration-none text-black" href="./about.html">About</a></li>
-                <li class="mb-2"><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a></li>
-                <li class="mb-2"><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a></li>
+                <li class="mb-2"><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a>
+                </li>
+                <li class="mb-2"><a class="text-decoration-none text-black" href="./for_landlords.html">For
+                        Landlords</a></li>
                 <li class="mb-2"><a class="text-decoration-none text-black" href="./contact.html">Contact</a></li>
             </ul>
         </div>
@@ -194,11 +222,11 @@
             window.addEventListener("scroll", function (event) {
                 console.log({ event })
             })
-    
+
             function toggleSidebar() {
                 const sidebarContent = document.getElementById("sidebarContent")
                 const classLists = [...sidebarContent.classList]
-    
+
                 classLists.includes("show") ? sidebarContent.classList.remove("show") : sidebarContent.classList.add("show")
             }
         </script>

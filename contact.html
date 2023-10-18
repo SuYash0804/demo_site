@@ -27,6 +27,15 @@
             margin: 0px auto;
         }
 
+        #sidebarContent {
+            transform: translateX(100%);
+            transition: 0.25s ease;
+        }
+
+        #sidebarContent.show {
+            transform: translateX(0%);
+        }
+
         @media (min-width: 992px) {
             .hero-main {
                 font-size: 45px;
@@ -63,7 +72,8 @@
             <span class="fw-bold">Book a viewing now</span>
         </a>
         <div class="d-block d-lg-none p-3">
-            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="17.5px" height="17.5px">
+            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50" width="17.5px" height="17.5px">
                 <path
                     d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
             </svg>
@@ -184,15 +194,22 @@
             </div>
         </div>
     </div>
-    <div id="sidebarContent" class="bg-white show" style="position: fixed; width: 300px; z-index: 100; inset: 0px 0px 0px auto;">
+    <div id="sidebarContent" class="bg-white d-block d-lg-none"
+        style="position: fixed; width: 300px; z-index: 100; inset: 0px 0px 0px auto;">
         <div class="d-flex justify-content-end p-3">
-            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <svg style="cursor: pointer;" onclick="toggleSidebar()" xmlns="http://www.w3.org/2000/svg" width="20px"
+                height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
         </div>
         <ul class="gap-4 fw-bolder m-0 p-3" style="list-style: none;">
             <li class="mb-2"><a class="text-decoration-none text-black" href="/index.html">Home</a></li>
             <li class="mb-2"><a class="text-decoration-none text-black" href="./about.html">About</a></li>
             <li class="mb-2"><a class="text-decoration-none text-black" href="./for_tenants.html">For Tenants</a></li>
-            <li class="mb-2"><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a></li>
+            <li class="mb-2"><a class="text-decoration-none text-black" href="./for_landlords.html">For Landlords</a>
+            </li>
             <li class="mb-2"><a class="text-decoration-none text-black" href="./contact.html">Contact</a></li>
         </ul>
     </div>
